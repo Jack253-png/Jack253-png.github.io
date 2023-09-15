@@ -1,21 +1,18 @@
+@font-face {
+    font-family: ysfont;
+    src: url("ysfont.ttf");
+}
+
+body {
+    font-family: ysfont;
+}
+
 body {
     padding: 0 0 500px;
     background: url(lowerspeed.jpg) center;
     background-attachment: fixed;
     background-size: cover;
     background-color: #222;
-}
-
-body.win12{
-    background: url(win12.svg) center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-body.nikov{
-    background: url(nikov.svg) center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .a {
