@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder2</title>
+    <link rel="stylesheet" href="tapple/main.css">
+    <link rel="stylesheet" href="style.css">
+    <base target="_blank">
+</head>
+<body><div id="loadback" style="background-color:#000;width:100%;height:100%;z-index:105;position:fixed;transition:5s;top:0;left:0;color: #d2d2d2;">
+    <p id="loadbacktext" style="width:100%;position:absolute;left:0;font-size:50px;transition:1s;height:100px;top:calc(50% - 80px);text-align:center;opacity:0;margin:0;">
+        嗨,别来无恙啊!</p>
+    <p id="loadbacktexteng" style="width:100%;position:absolute;left:0;font-size:25px;transition:1s;height:50px;top:50%;text-align:center;opacity:0;margin:0;">
+        Hi,terribly nice to meet you!</p>
+    <script>setTimeout(()=>{document.getElementById('loadbacktext').style.opacity=1;document.getElementById('loadbacktexteng').style.opacity = 1;},100);
+        setTimeout(()=>{document.getElementById('loadbacktext').style.opacity=0;document.getElementById('loadbacktexteng').style.opacity = 0;},2100);
+        setTimeout(()=>{document.getElementById('loadbacktext').innerText = '与君初相识，犹如故人归。欢迎来到Coder2的网站';
+        document.getElementById('loadbacktexteng').innerText='Meeting you first time is like seeing an old friend.Welcome to Coder2\'s website.'
+        document.getElementById('loadbacktext').style.opacity = 1;document.getElementById('loadbacktexteng').style.opacity=1;},4100);
+        let zh_ms=['海内存知己,天涯若比邻,正在加载请稍等...','有朋自远方来,不亦乐乎,欢迎!','君问归期未有期,巴山夜雨涨秋池,请耐心等待',
+        '无可奈何花落去,似曾相识燕归来,页面马上加载出来',
+        '盈缩之期,不但在天;养怡之福,可得永年。正在努力加载','遗民泪尽胡尘里,南望王师又一年,你的网络太慢了',
+        '让我们再来一次吧'];let en_ms=['Wherever you are,friendship never chenge.Page is loading...','Meeting friends is very happy.Welcome!',
+        'Your returning date hasn\'t decided,rain rises the pond.Please wait','Flowers fall helplessly,the swallow return again,Page coming soon',
+        // 'Ten yaers,the distance between life and death.Please wait patiently',
+        'The length of life is not just decided by god.Loading hard...',
+        'Loyalists crying in Hun\'s territory,year after year.The network is too slow.','Let\'s do it again'];
+        let c=-1;
+        let bcci = setInterval(() => {
+            document.getElementById('loadbacktext').style.opacity=0;document.getElementById('loadbacktexteng').style.opacity =0;
+            setTimeout(() => {c++; document.getElementById('loadbacktext').innerText = zh_ms[c % 7];
+                document.getElementById('loadbacktexteng').innerText = en_ms[c % 7];
+                document.getElementById('loadbacktext').style.opacity=1;document.getElementById('loadbacktexteng').style.opacity = 1;
+            }, 1000);document.getElementById('loadback').style.backgroundColor = '#003561';
+            setTimeout(()=>{document.getElementById('loadback').style.backgroundColor = '#000';}, 5000);
+        }, 10000);
+        document.body.onload=()=>{ document.getElementById('loadback').style.opacity=0;setTimeout(()=>{document.getElementById('loadback').style.display='none';},3000); clearInterval(bcci)};</script>
+    </div>
+    <div id="title">
+        <p class="chinese text">Coder2 的网站</p>
+        <p class="eng text">Coder2's website</p> 
+    </div>
+    <script src="tapple/jq.min.js"></script>
+    <p style="width: 100px;left: calc(50% - 50px);position: absolute;top: 0;text-align: center;">往下滑...<span class="eng">Scroll down...</span></p>
+    <div class="box card fx h func" style="--speed:5;width: 50%;margin-left: 25%;margin-top: calc(var(--ph) * 2);">
+        <p class="tit">你好!<span class="eng">Hello!</span></p>
+        <div class="body">
+            <p>很高兴认识你！<span class="eng">Glad to meet you!</span></p>
+            <p>没错，我就是 Coder2<span class="eng">Yes, I'm Coder2</span></p>
+        </div>
+    </div>
+    <div class="box card" style="--speed:5;width: 50%;margin-left: 25%;margin-top: var(--ph);position: relative;">
+        <p class="tit">自我介绍<span class="eng">Introduce</span></p>
+        <div class="body">
+            <p>Coder2</p>
+            <p>生日: 2011/01/27<span class="eng">Birthday: January 27,2011</span></p>
+        </div>
+    </div>
+    
+<div class="box card jt" style="--speed:5;width: 50%;margin-left: 25%;margin-top: var(--ph);">
+        <p class="tit"><span class="shine" style="--color:#2374b7;--colorshine:#76cfff;--speed:4;">精通各种语言</span><span class="eng">Be proficient in many languages</span></p>
+        <div class="body">
+            <div><p style="margin: 0;">Java</p>
+                <div><div><div style="background: #ffab19;width: 92%;height: 100%;border-radius: 10px;"
+                    class="highlight width"></div></div></div></div>
+            <div><p style="margin: 0;">Kotlin</p>
+                <div><div><div style="background: #7b53e8;width: 85%;height: 100%;border-radius: 10px;"
+                    class="highlight width"></div></div></div></div>
+            <div><p style="margin: 0;">Python</p>
+                <div><div><div style="background: #4db8a6;width: 52%;height: 100%;border-radius: 10px;"
+                    class="highlight width"></div></div></div></div>
+            <div><p style="margin: 0;">C/C++</p>
+                <div><div><div style="background: #6c94c9;width: 42%;height: 100%;border-radius: 10px;"
+                    class="highlight width"></div></div></div></div>
+            <div><p style="margin: 0;">Cmd</p>
+                <div><div><div style="background: #aaaaaa;width: 40%;height: 100%;border-radius: 10px;"
+                    class="highlight width"></div></div></div></div>
+            <div><p style="margin: 0;">C#</p>
+                <div><div><div style="background: #64047f;width: 30%;height: 100%;border-radius: 10px;"
+                    class="highlight width"></div></div></div></div>
+            <div><p style="margin: 0;">Vbs</p>
+                <div><div><div style="background: #a2e0ff;width: 8%;height: 100%;border-radius: 10px;"
+                    class="highlight width"></div></div></div></div>
+            <div><p style="margin: 0;">Powershell</p>
+                <div><div><div style="background: #3e6dbf;width: 7%;height: 100%;border-radius: 10px;"
+                    class="highlight width"></div></div></div></div>
+        </div>
+    </div>
+    <div class="box card fx h func" style="--speed:5;width: 50%;margin-left: 25%;margin-top: var(--ph);">
+        <p class="tit">擅长...<span class="eng">Be talented in...</span></p>
+        <div class="body">
+            <p>瞎装各种系统 (包括Windows, Linux)<span class="eng">Installing many kinds of systems happily (Include Windows and Linux)</span></p>
+            <p>剪视频<span class="eng">Editing videos</span></p>
+        </div>
+        <s><p>对了, 我还是一位 Minecraft+原神双厨玩家
+            <span class="eng">By the way, I am both a Minecraft player and Genshin Impact player</span></p></s>
+    </div>
+    <div class="box card fx h stop-center" style="--speed:5;width: 50%;margin-left: 25%;margin-top: var(--ph);">
+        <p class="tit">我的项目<span class="eng">My projects...</span></p>
+        <div class="body">
+            <p>往下滑...<span class="eng">Scroll down...</span></p>
+        </div>
+    </div>
+    <div class="box card pjc defc" style="width: 50%;margin-left: 25%;margin-top: var(--ph);" id="tapple">
+        <p class="tit">FxFluent: JavaFX 上的流畅设计语言控件库<span class="eng">FxFluent: Fluent control library on JavaFX</span></p>
+        <div class="body">
+            <p>一个 JavaFX 控件库, 设计语言来自 Microsoft<span class="eng">A JavaFX control library, design language comes from Microsoft</span></p>
+            <p>支持一小部分 XAML 文件的加载与解析<span class="eng">Support loading and parsing a few XAML files</span></p>
+            <div style="display: flex;" class="tool">
+                <a href="http://github.com/jack253-png/fxfluent">
+                    <p>项目地址</p>
+                    <span class="eng">link of the code</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="box card pjc defc" style="width: 50%;margin-left: 25%;margin-top: var(--ph);" id="tapple">
+        <p class="tit">AmclCore: Minecraft 启动器核心<span class="eng">AmclCore: Minecraft launcher core</span></p>
+        <div class="body">
+            <p>一个轻量化 Minecraft 启动器核心, 构建了一套多线程框架<span class="eng">A light-weight Minecraft launcher core, builded a multi-thread framework</span></p>
+            <s><p>还塞入了一套半完成的 Hoyolab/Hyperion API 封装<span class="eng">Contains half-completed Hoyolab/Hyperion API wrapper</span></p></s>
+            <div style="display: flex;" class="tool">
+                <a href="http://github.com/jack253-png/AMCLCore">
+                    <p>项目地址</p>
+                    <span class="eng">link of the code</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="box card fx h func" style="--speed:5;width: 50%;margin-left: 25%;margin-top: var(--ph);">
+        <p class="tit">联系方式<span class="eng">Contact</span></p>
+        <div class="body">
+            <p>邮件: <a href="mailto:guoxiuchen20170402@163.com" class="jump">guoxiuchen20170402@163.com</a><span class="eng">E-mail: <a href="mailto:guoxiuchen20170402@163.com" class="jump">guoxiuchen20170402@163.com</a></span></p>
+            <p>哔哩哔哩: <a href="http://space.bilibili.com/1195291639" class="jump">Coder2</a><span class="eng">Bilibili: <a href="http://space.bilibili.com/1195291639" class="jump">Coder2</a></span></p>
+        </div>
+    </div>
+    <div class="box card fx h func" style="--speed:5;width: 50%;margin-left: 25%;margin-top: var(--ph);">
+        <p class="tit">框架<span class="eng">Frameworks</span></p>
+        <div class="body">
+            <p>Tapple: <a href="https://github.com/tjy-gitnub/tapple" class="jump">github</a></p>
+        </div>
+    </div>
+    <!-- 预加载 -->
+    <img src="win12.svg" style="width: 0;height: 0;opacity: 0;border: 0;margin: 0;">
+    <img src="nikov.svg" style="width: 0;height: 0;opacity: 0;border: 0;margin: 0;">
+    <script src="tapple/scroll.js"></script>
+    <script>
+        my_scroll=(t)=>{
+            if(t==0){
+                $('#title>.xing').css('transform',`translateY(100px)`);
+                $('#title>.xing').css('opacity',`0`);
+                $('#title>.yuan').css('transform',`translateY(100px)`);
+                $('#title>.yuan').css('opacity',`0`);
+                /*$('#title>.text').css('transform',`translateY(50px)`);
+                $('#title>.text').css('opacity',`0`);*/
+            }else if(0<t && t<100){
+                $('#title>.xing').css('transform',`translateY(${(100-t)}px)`);
+                $('#title>.xing').css('opacity',`${(t/100)}`);
+                $('#title>.yuan').css('transform',`translateY(100px)`);
+                $('#title>.yuan').css('opacity',`0`);
+            }else if(t>=100 && t<200){
+                $('#title>.xing').css('transform',`translateY(0)`);
+                $('#title>.xing').css('opacity',`1`);
+                $('#title>.yuan').css('transform',`translateY(${(200-t)}px)`);
+                $('#title>.yuan').css('opacity',`${((t-100)/100)}`);
+               /* $('#title>.text').css('transform',`translateY(50px)`);*/
+                $('#title>.text').css('opacity',`0`);
+            }else if(t>=200 && t<300){
+                $('#title>.yuan').css('transform',`translateY(0)`);
+                $('#title>.yuan').css('opacity',`1`);
+                /*$('#title>.text').css('transform',`translateY(0)`);*/
+                $('#title>.text').css('opacity',`1`);
+                $('#title').show(200);
+            }else if(t<400){
+                $('#title>.xing').css('transform',`translateY(0)`);
+                $('#title>.xing').css('opacity',`1`);
+                $('#title>.yuan').css('transform',`translateY(0)`);
+                $('#title>.yuan').css('opacity',`1`);
+                /*$('#title>.text').css('transform',`translateY(0)`);*/
+                $('#title>.text').css('opacity',`1`);
+                $('#title').show(200);
+            }else{
+                $('#title').hide(200);
+            }
+        }
+    </script>
+    <!-- <img src="https://bing.com/th?id=OHR.Trossachs_ZH-CN9299955040_UHD.jpg&qlt=100" alt=""> -->
+</body>
+
+</html>
