@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coder2</title>
     <link rel="stylesheet" href="/coder2.github.io/tapple/main.css">
+    <link rel="stylesheet" href="tapple/main.css">
     <link rel="stylesheet" href="style.css">
     <base target="_blank">
 </head>
@@ -15,7 +16,7 @@
         嗨,别来无恙啊!</p>
     <p id="loadbacktexteng" style="width:100%;position:absolute;left:0;font-size:25px;transition:1s;height:50px;top:50%;text-align:center;opacity:0;margin:0;">
         Hi,terribly nice to meet you!</p>
-    <script>setTimeout(()=>{document.getElementById('loadbacktext').style.opacity=1;document.getElementById('loadbacktexteng').style.opacity = 1;},100);
+    <!--<script>setTimeout(()=>{document.getElementById('loadbacktext').style.opacity=1;document.getElementById('loadbacktexteng').style.opacity = 1;},100);
         setTimeout(()=>{document.getElementById('loadbacktext').style.opacity=0;document.getElementById('loadbacktexteng').style.opacity = 0;},2100);
         setTimeout(()=>{document.getElementById('loadbacktext').innerText = '与君初相识，犹如故人归。欢迎来到Coder2的网站';
         document.getElementById('loadbacktexteng').innerText='Meeting you first time is like seeing an old friend.Welcome to Coder2\'s website.'
@@ -37,13 +38,14 @@
             }, 1000);document.getElementById('loadback').style.backgroundColor = '#003561';
             setTimeout(()=>{document.getElementById('loadback').style.backgroundColor = '#000';}, 5000);
         }, 10000);
-        document.body.onload=()=>{ document.getElementById('loadback').style.opacity=0;setTimeout(()=>{document.getElementById('loadback').style.display='none';},3000); clearInterval(bcci)};</script>
+        document.body.onload=()=>{ document.getElementById('loadback').style.opacity=0;setTimeout(()=>{document.getElementById('loadback').style.display='none';},3000); clearInterval(bcci)};</script> -->
     </div>
     <div id="title">
         <p class="chinese text">Coder2 的网站</p>
         <p class="eng text">Coder2's website</p> 
     </div>
     <script src="/coder2.github.io/tapple/jq.min.js"></script>
+    <script src="tapple/jq.min.js"></script>
     <p style="width: 100px;left: calc(50% - 50px);position: absolute;top: 0;text-align: center;">往下滑...<span class="eng">Scroll down...</span></p>
     <div class="box card fx h func" style="--speed:5;width: 50%;margin-left: 25%;margin-top: calc(var(--ph) * 2);">
         <p class="tit">你好!<span class="eng">Hello!</span></p>
