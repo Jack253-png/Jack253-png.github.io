@@ -2,9 +2,13 @@
     font-family: ysfont;
     src: url("ysfont.ttf");
 }
+@font-face {
+    font-family: ysfont2;
+    src: url("https://gitee.com/jack253/Jack253-png.github.io/raw/master/ysfont.ttf");
+}
 
 body {
-    font-family: ysfont;
+    font-family: ysfont2, ysfont;
 }
 
 body {
